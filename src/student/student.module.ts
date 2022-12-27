@@ -23,7 +23,7 @@ import { TeacherModule } from '../teacher/teacher.module';
                 "_id": {$in: this.teachers},   
               },
               {
-                $push: {"students": this.studentId}
+                $push: {"students": this._id}
               },
          
             )          
